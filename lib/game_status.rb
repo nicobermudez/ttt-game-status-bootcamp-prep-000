@@ -20,6 +20,7 @@ WIN_COMBINATIONS = [
 def won(board)
   for each win_combo in WIN_COMBINATIONS
     win_combo.all? do |index|
+      index.eq to(board[index])
       
       
     
