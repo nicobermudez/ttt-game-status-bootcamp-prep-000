@@ -19,7 +19,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   for win_combo in WIN_COMBINATIONS do
-    win_combo.all? do |index|
+    win_win = win_combo.all? do |index|
+      board[index] = "X"
 
 
 
