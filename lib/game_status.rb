@@ -32,16 +32,13 @@ end
 
 
 def full?(board)
-  full_board = board.all? {|char| char == "X" || char == "O"}
-  full_board
+  board.all? {|char| char == "X" || char == "O"}
 end
 
 def draw?(board)
   if !won?(board) && full?(board)
     return true
-  elsif !won?(board) && !full?(board) || 
-    return false
-  elsif won?(board)
+  else
     return false
   end
 end
