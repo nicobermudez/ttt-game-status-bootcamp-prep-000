@@ -31,8 +31,11 @@ WIN_COMBINATIONS = [
 #
 
 def full?(board)
-  board.all? |char| do
+  full_board = board.all? |char| do
     board[char] == "X" || board[char] == "O"
+  end
+  full_board
+end
     
       
     
