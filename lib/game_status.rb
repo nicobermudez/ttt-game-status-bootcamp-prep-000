@@ -21,6 +21,8 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
       win_true = win_combo.all?{|index| board[index] == "X"}
       win_combo 
+      win_true = win.combo.all?{|index| board[index] == "O"}
+      win_combo
   end
   return false
 end
