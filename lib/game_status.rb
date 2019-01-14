@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
   ]
 
 def won(board)
-  board.select |combinations|
-  if combinations
+  WIN_COMBINATIONS.each do
+    
+    
   
