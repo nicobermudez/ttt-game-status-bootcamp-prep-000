@@ -19,5 +19,5 @@ WIN_COMBINATIONS = [
 
 def won(board)
   board.select |combinations|
-  combinations
+  if combinations
   
