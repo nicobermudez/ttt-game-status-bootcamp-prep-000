@@ -19,20 +19,17 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   for win_combo in WIN_COMBINATIONS do
-    all_equal = win_combo.all? do |index|
-      board[index] == "X" 
-    end
-    if (all_equal) 
-      win_combo
-    end
-    all_equal = win_combo.all? do |index|
-      board[index] == "O" 
-    end
-    if(all_equal)
-      win_combo 
-    end
-  end
-  false
+    counter = 0
+    for win_index in win_combo do
+      if board[win_index] = "X"
+        counter+=1 
+      if counter = 3
+        return win_combo
+
+
+
+
+return false
 end
 
     
