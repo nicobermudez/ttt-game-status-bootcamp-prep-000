@@ -22,6 +22,9 @@ def won(board)
     all_equal = win_combo.all? do |index|
       board[index] == "X" 
     end
+    all_equal = win_combo.all? do |index|
+      board[index] == "O" 
+    end
   end
   all_equal
 end
