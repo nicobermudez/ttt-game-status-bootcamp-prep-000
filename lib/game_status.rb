@@ -30,6 +30,8 @@ WIN_COMBINATIONS = [
 # end
 #
 
+def full?(board)
+  board.all? |
     
       
     
