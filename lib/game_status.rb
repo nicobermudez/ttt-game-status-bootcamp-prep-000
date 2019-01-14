@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   winner = []
-  empty = board.all? {|x| position_taken?(board, x)}
+  empty = board.all? {|x| x == " " }
   WIN_COMBINATIONS.each do |win_combo|
     if empty
       return false
