@@ -19,13 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   for win_combo in WIN_COMBINATIONS do
-    counter = 0
-    for win_index in win_combo do
-      if board[win_index].all? = "X"
-
-      if counter = 3
-        return win_combo
-
+    win_combo.all? do
 
 
 
