@@ -22,12 +22,13 @@ def won?(board)
     pos1 = win_combo[0]
     pos2 = win_combo[1]
     pos3 = win_combo[2]
-    if 
-      
-      return win_combo
+    if pos1 == "X" && pos2 = "X" && pos3 == "X"
+      win_combo
+    if pos1 == "O" && pos2 = "O" && pos3 == "O"
+      win_combo
     end
   end
-  return false
+  false
 end
 
 
