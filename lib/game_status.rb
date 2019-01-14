@@ -21,10 +21,16 @@ def won?(board)
   for win_combo in WIN_COMBINATIONS do
     win = win_combo.all? do |index|
       board[index] = "X"
-    if(win)
-      win_combo
+      if(win)
+        win_combo
+      end
     end
-  end
+    win = win_combo.all? do |index|
+      board[index] = "X"
+      if(win)
+        win_combo
+      end
+    end
   end
 
 return false
