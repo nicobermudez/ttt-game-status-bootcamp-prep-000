@@ -22,7 +22,10 @@ def won(board)
     all_equal = win_combo.all? do |index|
       index.eq to(board[index])
     end
-    
+  end
+  return all_equal
+end
+
     
       
     
