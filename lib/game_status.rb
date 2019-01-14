@@ -21,8 +21,6 @@ def won?(board)
   winner = []
   empty = board.all? {|x| x == " " }
   WIN_COMBINATIONS.each do |win_combo|
-    if empty || full?(board)
-      return false
     elsif win_combo.all? { |index| board[index] == "X"} || win_combo.all? {|index| board[index]=="O"}
       winner = win_combo
     end
