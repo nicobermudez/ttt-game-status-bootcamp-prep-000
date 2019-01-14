@@ -22,10 +22,10 @@ def won?(board)
     pos1 = win_combo[0]
     pos2 = win_combo[1]
     pos3 = win_combo[2]
-    if pos1 == "X" && pos2 = "X" && pos3 == "X"
+    if board[pos1] == "X" && board[pos2] = "X" && board[pos3] == "X"
       return win_combo
     end
-    if pos1 == "O" && pos2 = "O" && pos3 == "O"
+    if board[pos1] == "O" && board[pos2] = "O" && board[pos3] == "O"
       return win_combo
     end
   end
