@@ -19,12 +19,14 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   winner = []
+  empty = board.all? {|x| position_taken?(board, x)}
   WIN_COMBINATIONS.each do |win_combo|
+    if empty
     if win_combo.all? { |index| board[index] == "X"} || win_combo.all? {|index| board[index]=="O"}
-      win_combo
+      winner = win_combo
     end
   end
-  false
+  winner
 end
 
 
