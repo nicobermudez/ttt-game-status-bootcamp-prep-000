@@ -21,7 +21,7 @@ def won?(board)
   for win_combo in WIN_COMBINATIONS do
     win = win_combo.all? do |index|
       board[index] = "X"
-    if(win?)
+    if(win)
       win_combo
     end
   end
