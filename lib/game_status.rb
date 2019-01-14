@@ -32,7 +32,7 @@ def won?(board)
       win_combo 
     end
   end
-  all_equal
+  false
 end
 
     
