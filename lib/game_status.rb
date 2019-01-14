@@ -23,7 +23,7 @@ def won(board)
       win_combo[index].eq to(board[index])
     end
   end
-  return all_equal
+  all_equal
 end
 
     
