@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   
   ]
 
-def won(board)
+def won?(board)
   for win_combo in WIN_COMBINATIONS do
     all_equal = win_combo.all? do |index|
       board[index] == "X" 
