@@ -22,7 +22,7 @@ def won?(board)
     win_combo.each do |win_index|
       win_true = win_combo.all?{|index| board[index] = "X"} || win_combo.all?{|index| board[index] = "O"}
       if(win_true) 
-        win_combo 
+        return win_combo 
       end
     end
   end
