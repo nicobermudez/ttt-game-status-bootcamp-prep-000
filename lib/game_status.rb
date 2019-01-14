@@ -24,6 +24,7 @@ def won?(board)
     pos3 = win_combo[2]
     if pos1 == "X" && pos2 = "X" && pos3 == "X"
       win_combo
+    end
     if pos1 == "O" && pos2 = "O" && pos3 == "O"
       win_combo
     end
