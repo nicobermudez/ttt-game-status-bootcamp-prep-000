@@ -19,10 +19,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
-      win_true = win_combo.all?{|index| board[index] == "X"}
-      win_combo 
-      win_true = win.combo.all?{|index| board[index] == "O"}
-      win_combo
+    win_combo.each do |index|
+      if position_taken?(board, index)
+      
+    end
   end
   return false
 end
